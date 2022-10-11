@@ -79,9 +79,10 @@ import cartopy.crs as crs
 import cartopy.feature as cfeat
 import matplotlib.pyplot as p
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
+import sys
 
 p.rcParams.update({'font.size':16})
-filename    = "namelist.wps.all_options"
+filename    = sys.argv[1] #"namelist.wps.all_options"
 nml         = f90nml.read(filename)
 
 var         = ('max_dom','dx','dy','ref_lat','ref_lon','ref_x','ref_y',
