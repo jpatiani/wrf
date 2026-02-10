@@ -1,6 +1,8 @@
 """
 $Id. Plotgrid mimic plotgrid.ncl script for checking domain created by WPS namelist setting.
 
+ Program ini membutuhkan paket f90nml
+
 namelist /share/ wrf_core, max_dom, start_date, end_date, &
                      start_year, end_year, start_month, end_month, &
                      start_day, end_day, start_hour, end_hour, &
